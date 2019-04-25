@@ -20,6 +20,23 @@ class Card {
         // int aceValue; // 1 or 11
         bool is_used;
 
+        void set_weight(char w){
+        switch(w){
+            case 'A':
+                weight = 1;
+                break;
+            case 'T':
+            case 'J':
+            case 'Q':
+            case 'K':
+                weight = 10;
+                break;
+            default:
+                weight = (int)w;
+                break;
+        }
+    }
+
     public:
 
     void set_suite(string s){
@@ -27,15 +44,14 @@ class Card {
     }
     void set_value(char v){
         value = v;
+        set_weight(v);
     }
     void set_used(bool u){
         is_used = u;
     }
-    void set_weight(int w){
-        weight = w;
-    }
+    
 
-    string get_suit(){
+    string get_suite(){
         return suit;
     }
     char get_value(){
