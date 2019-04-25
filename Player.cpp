@@ -1,3 +1,6 @@
+#ifndef PLAYER_CPP
+#define PLAYER_CPP
+
 #include <string>
 #include <cstdlib>
 #include <iostream>
@@ -32,3 +35,5 @@ class Player {
     }
 
 };
+
+#endif

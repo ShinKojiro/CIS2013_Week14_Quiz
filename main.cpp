@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include "Player.cpp"
+#include "Card.cpp"
 
 using namespace std;
 
@@ -12,17 +13,22 @@ int main(){
     Player dealer;
     Player playerOne;
     dealer.set_name("Dealer");
+    string suites[] = { "Diamonds", "Clubs", "Spades", "Hearts" };
+    Card deck[52];
 
-    char continueChoice = 'y';
+    //char continueChoice = 'y';
     // new Player playerOne;
     // new Player playerTwo;
 
     cout << "Welcome to blackjack" << endl << "Enter Player 1 name: ";
-    // playerOne.setName();
+   
     cin >> playerOneName;
     playerOne.set_name(playerOneName);
     // cout << endl << "Enter player 2 name: ";
-    // playerTwo.setName();
+ 
+
+    // Populate deck of cards
+    
 
     cout << "Dealer has a A of Diamonds, and a 5 of Clubs" << endl;
     cout << playerOne.get_name() << "has a A of Spades, and a K of Hearts" << endl;

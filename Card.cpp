@@ -1,3 +1,6 @@
+#ifndef CARD_CPP
+#define CARD_CPP
+
 #include <string>
 #include <cstdlib>
 
@@ -68,3 +71,5 @@ class Card {
     // }
 
 };
+
+#endif
