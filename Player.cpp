@@ -1,6 +1,7 @@
 #include <string>
 #include <cstdlib>
 #include <iostream>
+#include "Card.cpp"
 
 using namespace std;
 
@@ -8,27 +9,26 @@ class Player {
 
     private:
 
-        int ownedCards[10];
-        string playerName;
+        // int ownedCards[9];
+        string name;
         bool is_hitting;
-
+        Card hand[9];
 
     public:
 
     Player(){
-        
+        set_name("unknown");
+        set_hitting(true);
     }
 
-    void setName(string n){
-        playerName = n;
-        cin >> playerName;
+    void set_name(string n){
+        name = n;
+    }
+    void set_hitting(bool h){
+        is_hitting = h;
+    }
+    string get_name(){
+        return name;
     }
 
-    void setCards(int c[10]){
-
-    }
-
-    string getName(){
-        return playerName;
-    }
 };
