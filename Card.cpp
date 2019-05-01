@@ -64,28 +64,6 @@ class Card {
         return weight;
     }
 
-    // void setFaceLetter(char l){
-    //     faceLetter = l;
-    // }
-
-    // char setFaceLetter(){
-    //     return faceLetter;
-    // }
-
-    // void setAceValue(int a){
-    //     aceValue = a;
-    //     // if( placeHolderName < 12){
-    //     //     aceValue = 11;
-    //     // }
-    //     // else{
-    //     //     aceValue = 1;
-    //     // }
-    // }
-
-    // bool setAceValue(){
-    //     return aceValue;
-    // }
-
 };
 
 #endif

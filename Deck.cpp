@@ -12,9 +12,13 @@ class Deck {
     private:
 
         int size = 52;
-
+        Card deck[52];
 
     public:
+
+    Deck(){
+
+    }
 
     void shuffle(){
         
